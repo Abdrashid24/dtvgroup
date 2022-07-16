@@ -1,0 +1,69 @@
+.header
+    &-container
+        width: 1000rem
+        margin: 35rem auto 0 auto
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        z-index: 2
+        &__logo
+            width: 79rem
+            height: 79rem
+            margin-left: 40rem
+            img
+                width: 100%
+                height: 100%
+        &__nav
+            display: flex
+            margin-right: 61rem
+            &-link
+                font-weight: 400
+                font-size: 18rem
+                color: #fff
+                margin-right: 38rem
+                &:last-child
+                    margin-right: 0
+    &-slider
+        width: 100%
+        height: 950rem
+        &__block
+            width: 100%
+            height: 100%
+            img
+                width: 100%
+                height: 100%
+.owl
+    &-dots
+        display: flex
+        position: absolute
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-align: center
+    &-dot
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 15rem
+        span
+            background: #95928D
+            width: 13rem
+            height: 13rem
+            border-radius: 100%
+            transition: 0.4s
+            opacity: 1
+            &:hover
+                background: #c9c9c9
+                opacity: .8
+.header-slider .owl-dots
+    bottom: 32rem  
+.active
+    span
+        background: #fff
+        transition: 0
+        &:hover
+                background: #fff
+                opacity: 1
